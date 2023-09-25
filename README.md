@@ -16,7 +16,6 @@ cd basic-canvas-setup
 ## event.js
 All events are registered within the ``event.js`` file.
 This includes the functionality and the actual binding process.
-
 This includes native, user-defined or even self-created EventListeners.
 
 ## Keyboard.js
@@ -33,4 +32,4 @@ The following functions of the class are available for this purpose:
 - ``addHandler(button, handler, opts)``: Creates and binds a handler for a given mouse button
 - ``removeHandler(button, opts)``: Detaches the handler specified for a particular mouse button
 - ``isPressed(button)``: Returns whether the queried button is currently pressed
-- ``getPosition``: Returns the current x and y coordinates of the mouse
+- ``getPosition()``: Returns the current x and y coordinates of the mouse
