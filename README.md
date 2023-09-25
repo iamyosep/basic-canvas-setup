@@ -1,4 +1,4 @@
-# Basic Canvas Setup README
+# Canvas Template
 
 This repository provides an easy starting point for quickly prototyping ideas for Canvas-based applications.
 This is a template, but it contains a variety of functionalities including a feature to easily handle keyboard as well as mouse interactions. 
@@ -8,6 +8,8 @@ This is a template, but it contains a variety of functionalities including a fea
 You only need to clone the repository and switch into the directory
 ```
 git clone https://github.com/YousifW/basic-canvas-setup.git
+```
+```
 cd basic-canvas-setup
 ```
 
@@ -21,6 +23,6 @@ as well as the recalculation of the width and height of the canvas.
 The ``Keyboard.js`` class contains the desired core functionality to recognize simple interactions. 
 These are registered in ``event.js``, as discussed earlier. 
 The following functions of the class are available for this purpose:
-- ``addHandler(key, handler, opts)``: ECreates and binds a handler for a given key
+- ``addHandler(key, handler, opts)``: Creates and binds a handler for a given key
 - ``removeHandler(key, opts)``: Detaches the handler specified for a particular key
 - ``isKeyDown(key, opts)``: Returns whether the queried key is currently pressed
