@@ -6,3 +6,5 @@ const mouse = {
     y: undefined,
     isPressed: false
 }
+
+const keys = {};
