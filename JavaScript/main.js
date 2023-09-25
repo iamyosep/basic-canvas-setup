@@ -4,7 +4,6 @@ const start = () => {
 
 const update = () => {
     requestAnimationFrame(update);
-    console.log(keys);
 }
 
 start();

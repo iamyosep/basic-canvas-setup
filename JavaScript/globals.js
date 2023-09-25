@@ -7,4 +7,4 @@ const mouse = {
     isPressed: false
 }
 
-const keys = {};
+const keyboard = new Keyboard();

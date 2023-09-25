@@ -10,8 +10,8 @@ const updateMousePosition = (event) => {
     mouse.isPressed = event.buttons === 1;
 };
 
-window.addEventListener("keyup", (event) => keys[event.key] = false);
-window.addEventListener("keydown", (event) => keys[event.key] = true);
+keyboard.addHandler(" ", () => console.log("Space is pressed"), { down: true });
+keyboard.addHandler(32, () => console.log("Space is released"), { up: true, keyCode: true });
 
 window.addEventListener("mouseup", () => mouse.isPressed = false);
 window.addEventListener("mousedown", () => mouse.isPressed = true);
