@@ -13,16 +13,24 @@ git clone https://github.com/YousifW/basic-canvas-setup.git
 cd basic-canvas-setup
 ```
 
-## Keyboard.js & event.js
+## event.js
 All events are registered within the ``event.js`` file.
 This includes the functionality and the actual binding process.
 
-Some functionalities are already available, such as the updating of the position of the mouse and its actions, 
-as well as the recalculation of the width and height of the canvas.
+This includes native, user-defined or even self-created EventListeners.
 
+## Keyboard.js
 The ``Keyboard.js`` class contains the desired core functionality to recognize simple interactions. 
-These are registered in ``event.js``, as discussed earlier. 
 The following functions of the class are available for this purpose:
 - ``addHandler(key, handler, opts)``: Creates and binds a handler for a given key
 - ``removeHandler(key, opts)``: Detaches the handler specified for a particular key
 - ``isKeyDown(key, opts)``: Returns whether the queried key is currently pressed
+
+## Mouse.js
+The ``Mouse.js`` class is similar to the aforementioned Keyboard class.
+The user can create listeners for all mouse buttons. An atlas is also provided for the common mouse buttons.
+The following functions of the class are available for this purpose:
+- ``addHandler(button, handler, opts)``: Creates and binds a handler for a given mouse button
+- ``removeHandler(button, opts)``: Detaches the handler specified for a particular mouse button
+- ``isPressed(button)``: Returns whether the queried button is currently pressed
+- ``getPosition``: Returns the current x and y coordinates of the mouse

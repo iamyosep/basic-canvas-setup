@@ -36,6 +36,10 @@ class Mouse {
         return this.buttons[button];
     }
 
+    getPosition() {
+        return { x: this.x, y: this.y };
+    }
+
     #handleMouseMove(event) {
         this.x = event.clientX;
         this.y = event.clientY;
