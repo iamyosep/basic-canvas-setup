@@ -1,5 +1,4 @@
 const start = () => {
-    resizeCanvas();
 }
 
 const update = () => {
